@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 3000;
 const dbPassword = process.env.DB_PASSWORD;
 
 // MongoDB connection
-const mongoURI = 'mongodb+srv://vijay:${dbPassword}@wordlycluster.gy6mr.mongodb.net/?retryWrites=true&w=majority&appName=wordlyCluster';
+const mongoURI = `mongodb+srv://vijay:${dbPassword}@wordlycluster.gy6mr.mongodb.net/?retryWrites=true&w=majority&appName=wordlyCluster`;
 
 mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => console.log('MongoDB connected'))
